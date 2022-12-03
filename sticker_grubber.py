@@ -18,7 +18,7 @@ def chpic_stickers_grubber():
     logger_chpic.setLevel(logging.INFO)
 
     # настройка обработчика и форматировщика для logger_chpic
-    handler1 = logging.FileHandler(f"chpic.log", mode='w')
+    handler1 = logging.FileHandler(f"logs/chpic.log", mode='w')
     formatter1 = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
     # добавление форматировщика к обработчику
@@ -105,7 +105,7 @@ def combot_stickers_grubber():
     logger_combot.setLevel(logging.INFO)
 
     # настройка обработчика и форматировщика для logger_combot
-    handler2 = logging.FileHandler('combot.log', mode='w')
+    handler2 = logging.FileHandler('logs/combot.log', mode='w')
     formatter2 = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
     # добавление форматировщика к обработчику
@@ -193,7 +193,7 @@ def tlgrm_stickers_grubber():
     logger_tlgrm.setLevel(logging.INFO)
 
     # настройка обработчика и форматировщика для logger_tlgrm
-    handler3 = logging.FileHandler(f"tlgrm.log", mode='w')
+    handler3 = logging.FileHandler(f"logs/tlgrm.log", mode='w')
     formatter3 = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
     # добавление форматировщика к обработчику
@@ -278,7 +278,7 @@ def main():
     logger_main.setLevel(logging.INFO)
 
     # настройка обработчика и форматировщика для logger_main
-    handler = logging.FileHandler(f"{__name__}.log", mode='w')
+    handler = logging.FileHandler(f"logs/main.log", mode='w')
     formatter = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
     # добавление форматировщика к обработчику
